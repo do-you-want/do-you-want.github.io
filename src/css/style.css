@@ -1,0 +1,156 @@
+:root {
+  --black: #262626;
+  --light: #e6fbff;
+  --red: #b3001b;
+  --blue: #255c99;
+  --magenta: #c46bae;
+  --default-radius: 3px
+}
+body, html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--light);
+  font-family: "Roboto", sans-serif;
+}
+#make-a-question, #answer-a-question {
+  display: none;
+  margin: 0 auto;
+}
+
+
+
+#make-a-question #container {
+  min-width: 600px;
+  max-width: 600px;
+  margin-top: 40px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#make-a-question input {
+  flex: 1;
+  margin-bottom: 20px;
+  padding: 12px 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--default-radius);
+  box-shadow: 0px 0px 1px 1px var(--blue);
+}
+
+#make-a-question input:focus {
+  border: none;
+  border-radius: var(--default-radius);
+  box-shadow: 0px 0px 1px 1px var(--blue);
+}
+
+#make-a-question button {
+  flex: 1;
+  padding: 10px 20px;
+  background-color: var(--blue);
+  color: var(--light);
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: var(--default-radius);
+}
+
+#container-link {
+  display: none;
+  margin-top: 20px;
+}
+
+#btn-copy-link {
+  margin-top: 20px;
+}
+
+#answer-a-question #container {
+  min-width: 1200px;
+  max-width: 1200px;
+  margin-top: 40px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#answer-a-question #container h3 {
+  text-align: center;
+  width: 100%;
+}
+
+#answer-a-question #create-a-question {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#btn-yes {
+  margin-left: 10px;
+}
+
+#btn-wrap {
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+
+.btn-answer {
+  padding: 8px 30px;
+  border: none;
+  cursor: pointer;
+  color: var(--light);
+  font-size: 22px;
+  border-radius: var(--default-radius);
+}
+
+#btn-yes {
+  background-color: var(--blue);
+}
+
+#btn-no {
+  background-color: var(--red);
+}
+
+#container-btn-no-random {
+  position: relative;
+}
+
+#btn-no-random {
+  background-color: var(--red);
+  display: none;
+}
+
+#about {
+  display: none;
+  margin: 20px auto;
+  min-width: 600px;
+  max-width: 600px;
+}
+
+#about #about-wrap {
+  display: flex;
+  direction: row;
+  align-items: center;
+  column-gap: 30px;
+}
+
+#about #about-wrap .fa-circle-question {
+  color: var(--blue);
+  font-size: 22px;
+}
+
+#about #about-wrap h3 {
+  color: var(--black);
+}
+
+#about #about-wrap h4 {
+  color: var(--black);
+  font-weight: 500;
+  text-align: justify;
+}
+#about #about-wrap h6 {
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: line-through;
+}
