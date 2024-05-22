@@ -59,6 +59,8 @@ function randomizeButtonPosition() {
   button.style.display = "none";
   let spaceWidth = window.innerHeight;
   let spaceHeight = window.innerWidth;
+  spaceWidth = spaceWidth - 50;
+  spaceHeight = spaceHeight - 200;
 
   let top = Math.round(Math.random() * (spaceWidth - 200)) + "px";
   let left = Math.round(Math.random() * (spaceHeight - 200)) + "px";
