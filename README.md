@@ -18,6 +18,8 @@ Projeto criado com tecnologias simples de trabalhar para que qualquer pessoa com
 
 - Responsividade e funcionamento em smartphones
   - Tornar tela responsiva.
+  - Ajustar tamanho dos elementos para visualizar em celular  
+    (talvez usar 'em' ao em vez de 'px')
 - Identidade visual
   - Criar logo para o projeto.
   - Criar uma imagem para favicon do projeto.
