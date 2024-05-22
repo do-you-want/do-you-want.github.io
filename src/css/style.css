@@ -29,6 +29,7 @@ body, html {
 }
 
 #make-a-question input {
+  font-family: 'Roboto';
   flex: 1;
   margin-bottom: 20px;
   padding: 12px 5px;
