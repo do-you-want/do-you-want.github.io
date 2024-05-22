@@ -74,3 +74,8 @@ function randomizeButtonPosition() {
 document.getElementById("btn-yes").addEventListener("click", (ev) => {
   alert("Promessa é dívida, emmm?!?!");
 });
+
+//-- No smartphone quando clicado no botão, ele muda de posição
+document.getElementById("btn-no").addEventListener("click", (ev) => {
+  randomizeButtonPosition();
+});
