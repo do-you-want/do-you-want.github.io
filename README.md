@@ -22,10 +22,11 @@ Projeto criado com tecnologias simples de trabalhar para que qualquer pessoa com
     (Isso é necessário pois no celular não tem o evento "mouseover", que atualmente é utilizado para disparar a mudança de posição do botão "Não").
 - Identidade visual
   - Criar logo para o projeto.
+  - Criar uma imagem para favicon do projeto.
   - Criar imagem de compartilhamento para o Twitter/X com dimensões corretas (metatag).
   - Criar imagem de compartilhamento para o Facebook com dimensões corretas (metatag).
   - Criar imagem de compartilhamento para o Linkedin com dimensões corretas (metatag).
-  - Adicionar uma metatag de descrição para o projeto
+  - Adicionar uma metatag de descrição para o projeto.
 - Organização
   - Separar página de criação de pergunta da página de resposta.  
     Hoje em dia está tudo junto.
