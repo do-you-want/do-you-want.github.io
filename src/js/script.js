@@ -1,9 +1,10 @@
 window.onload = function () {
   const searchParams = new URLSearchParams(window.location.search);
   const question = searchParams.get("question");
+  const customMessageParam = searchParams.get("customMessage");
 
-  if (question) {
-    showAnswer(question);
+  if (question && customMessageParam) {
+    showAnswer(question, customMessageParam);
     return;
   }
   showInitialForm();
@@ -11,16 +12,23 @@ window.onload = function () {
 
 let question = null;
 let newUrl = null;
+let customMessage = null;
 
 document
   .getElementById("btn-generate-question")
   .addEventListener("click", (ev) => {
     question = document.getElementById("input-question").value;
+    customMessage =
+      document.getElementById("input-custom-message").value || customMessage;
     if (!question || question.trim() == "") {
       alert("Por favor, informe a pergunta desejada");
       return;
     }
-    newUrl = `${window.location.href}?question=${encodeURIComponent(question)}`;
+    newUrl = `${window.location.origin}${
+      window.location.pathname
+    }?question=${encodeURIComponent(
+      question
+    )}&customMessage=${encodeURIComponent(customMessage)}`;
     showLink();
   });
 
@@ -40,10 +48,14 @@ function showInitialForm() {
   document.getElementById("about").style.display = "block";
 }
 
-function showAnswer(question) {
+function showAnswer(question, customMessage) {
   document.getElementById("the-question").textContent = `${question}?`;
   document.getElementById("answer-a-question").style.display = "block";
   document.getElementById("link-home").href = window.location.origin;
+
+  document.getElementById("btn-yes").addEventListener("click", (ev) => {
+    alert(customMessage);
+  });
 }
 
 document.getElementById("btn-no").addEventListener("mouseover", (ev) => {
@@ -57,41 +69,16 @@ document.getElementById("btn-no-random").addEventListener("mouseover", (ev) => {
 function randomizeButtonPosition() {
   const button = document.getElementById("btn-no");
   button.style.display = "none";
-  const top = getTopPosition();
-  const left = getLeftPosition();
+  let spaceWidth = window.innerHeight;
+  let spaceHeight = window.innerWidth;
+  spaceWidth = spaceWidth - 50;
+  spaceHeight = spaceHeight - 200;
+
+  let top = Math.round(Math.random() * (spaceWidth - 200)) + "px";
+  let left = Math.round(Math.random() * (spaceHeight - 200)) + "px";
   const btnRandom = document.getElementById("btn-no-random");
   btnRandom.style.display = "inline-block";
   btnRandom.style.position = "absolute";
-  btnRandom.style.top = top + "px";
-  btnRandom.style.left = left + "px";
-}
-
-document.getElementById("btn-yes").addEventListener("click", (ev) => {
-  alert("Promessa é dívida, emmm?!?!");
-});
-
-document.getElementById("btn-no").addEventListener("click", (ev) => {
-  randomizeButtonPosition();
-});
-
-document.getElementById("btn-no-random").addEventListener("click", (ev) => {
-  randomizeButtonPosition();
-});
-
-function getLeftPosition() {
-  const spaceWidth = window.innerWidth;
-  const left = Math.round(Math.random() * (spaceWidth - 100));
-  if (left < 50) {
-    return getLeftPosition();
-  }
-  return left;
-}
-
-function getTopPosition() {
-  const spaceHeight = window.innerHeight;
-  const top = Math.round(Math.random() * (spaceHeight - 350));
-  if (top < 50) {
-    return getTopPosition();
-  }
-  return top;
+  btnRandom.style.top = top;
+  btnRandom.style.left = left;
 }
