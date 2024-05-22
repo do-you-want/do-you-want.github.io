@@ -10,14 +10,13 @@ body, html {
   padding: 0;
   margin: 0;
   background-color: var(--light);
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto" !important;
 }
+
 #make-a-question, #answer-a-question {
   display: none;
   margin: 0 auto;
 }
-
-
 
 #make-a-question #container {
   min-width: 600px;
