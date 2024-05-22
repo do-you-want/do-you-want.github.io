@@ -24,6 +24,11 @@
           id="input-question"
           placeholder="Escreva a pergunta que deseja fazer"
         />
+        <input
+          type="text"
+          id="input-custom-message"
+          placeholder="Escreva a mensagem de resposta"
+        />
         <button id="btn-generate-question">Gerar página com pergunta</button>
 
         <div id="container-link">
@@ -64,13 +69,16 @@
         <div>
           <h3>Como funciona?</h3>
           <h4>
-            Escreva uma pergunta no campo acima e depois clique em "Gerar página
-            com pergunta".
+            Escreva uma pergunta no campo acima. A resposta desejada da pergunta
+            precisa ser "Sim".
+            <br /><br />
+            Escreva uma mensagem que será exibida quando a pessoa clicar no
+            botão "Sim".
+            <br /><br />
+            Clique em "Gerar página com pergunta".
             <br /><br />
             Um link será gerado. Envie esse link para a pessoa que você deseja
             que responda a sua pergunta.
-            <br /><br />
-            A resposta desejada da pergunta precisa ser "Sim".
           </h4>
           <h6>
             Segredinho sujo: A pessoa não vai conseguir clicar no "Não"
@@ -87,6 +95,7 @@
           <a
             href="https://github.com/do-you-want/do-you-want.github.io"
             target="_blank"
+            rel="noopener"
           >
             Contribua no Github <i class="fa-brands fa-github"></i
           ></a>
