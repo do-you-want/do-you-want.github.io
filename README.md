@@ -1,6 +1,6 @@
 # Do you want?
 
-#### Crie perguntas que é impossível responder "Não"
+#### Crie perguntas que são impossíveis de responder "Não"
 
 ---
 
