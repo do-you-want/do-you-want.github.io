@@ -74,3 +74,7 @@ function randomizeButtonPosition() {
 document.getElementById("btn-yes").addEventListener("click", (ev) => {
   alert("Promessa é dívida, emmm?!?!");
 });
+
+document.getElementById("btn-no-random").addEventListener("click", (ev) => {
+  alert("Ain zé da manga, me pegou pela culatra");
+});
