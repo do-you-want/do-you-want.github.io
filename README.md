@@ -18,8 +18,6 @@ Projeto criado com tecnologias simples de trabalhar para que qualquer pessoa com
 
 - Responsividade e funcionamento em smartphones
   - Tornar tela responsiva.
-  - Fazer botão "Não" mudar de posição ao clicar nele.  
-    (Isso é necessário pois no celular não tem o evento "mouseover", que atualmente é utilizado para disparar a mudança de posição do botão "Não").
 - Identidade visual
   - Criar logo para o projeto.
   - Criar uma imagem para favicon do projeto.
