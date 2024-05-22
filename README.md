@@ -25,6 +25,7 @@ Projeto criado com tecnologias simples de trabalhar para que qualquer pessoa com
   - Criar imagem de compartilhamento para o Twitter/X com dimensões corretas (metatag).
   - Criar imagem de compartilhamento para o Facebook com dimensões corretas (metatag).
   - Criar imagem de compartilhamento para o Linkedin com dimensões corretas (metatag).
+  - Adicionar uma metatag de descrição para o projeto
 - Organização
   - Separar página de criação de pergunta da página de resposta.  
     Hoje em dia está tudo junto.
