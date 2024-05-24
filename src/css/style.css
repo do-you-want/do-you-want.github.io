@@ -32,6 +32,7 @@ html {
 }
 
 #make-a-question input {
+  font-family: 'Roboto';
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 20px;
@@ -49,6 +50,7 @@ html {
 }
 
 #make-a-question button {
+  font-family: 'Roboto';
   padding: 10px 20px;
   background-color: var(--blue);
   color: var(--light);
