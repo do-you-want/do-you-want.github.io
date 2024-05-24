@@ -136,7 +136,6 @@ html {
   display: flex;
   align-items: center;
   column-gap: 30px;
-  transition: 200ms ease all;
 }
 
 #about #about-wrap .fa-circle-question {
