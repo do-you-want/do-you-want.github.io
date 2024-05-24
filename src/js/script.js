@@ -36,13 +36,13 @@ function showLink() {
 }
 
 function showInitialForm() {
-  document.getElementById("make-a-question").style.display = "table";
-  document.getElementById("about").style.display = "table";
+  document.getElementById("make-a-question").style.display = "flex";
+  document.getElementById("about").style.display = "block";
 }
 
 function showAnswer(question) {
   document.getElementById("the-question").textContent = `${question}?`;
-  document.getElementById("answer-a-question").style.display = "table";
+  document.getElementById("answer-a-question").style.display = "block";
   document.getElementById("link-home").href = window.location.origin;
 }
 
