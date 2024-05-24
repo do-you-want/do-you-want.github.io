@@ -16,7 +16,7 @@ document
   .getElementById("btn-generate-question")
   .addEventListener("click", (ev) => {
     question = document.getElementById("input-question").value;
-    if (!question || question == "") {
+    if (!question || question.trim() == "") {
       alert("Por favor, informe a pergunta desejada");
       return;
     }
