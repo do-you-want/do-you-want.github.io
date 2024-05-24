@@ -6,30 +6,34 @@
   --magenta: #c46bae;
   --default-radius: 3px
 }
-body, html {
+
+body,
+html {
   padding: 0;
   margin: 0;
   background-color: var(--light);
-  font-family: "Roboto" !important;
+  font-family: "Roboto", sans-serif;
 }
 
-#make-a-question, #answer-a-question {
-  display: none;
+#make-a-question,
+#answer-a-question {
+  display: none; 
   margin: 0 auto;
 }
 
 #make-a-question #container {
-  min-width: 600px;
   max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 40px;
-  padding: 15px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
 }
 
 #make-a-question input {
-  font-family: 'Roboto';
-  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
   margin-bottom: 20px;
   padding: 12px 5px;
   font-size: 16px;
@@ -45,8 +49,6 @@ body, html {
 }
 
 #make-a-question button {
-  font-family: 'Roboto';
-  flex: 1;
   padding: 10px 20px;
   background-color: var(--blue);
   color: var(--light);
@@ -67,9 +69,8 @@ body, html {
 }
 
 #answer-a-question #container {
-  min-width: 1200px;
-  max-width: 1200px;
-  margin-top: 40px;
+  max-width: 600px;
+  margin: 40px auto 0;
   padding: 15px;
   display: flex;
   flex-direction: column;
@@ -91,7 +92,6 @@ body, html {
 }
 
 #btn-wrap {
-  display: table;
   margin: 0 auto;
   position: relative;
 }
@@ -125,21 +125,27 @@ body, html {
 
 #about {
   display: none;
-  margin: 20px auto;
-  min-width: 600px;
+  margin: 1.25rem auto;
   max-width: 600px;
 }
 
 #about #about-wrap {
   display: flex;
-  direction: row;
   align-items: center;
   column-gap: 30px;
+  padding: 1.5rem;
+  transition: 200ms ease all;
 }
 
 #about #about-wrap .fa-circle-question {
   color: var(--blue);
   font-size: 22px;
+}
+
+@media (max-width: 450px) {
+  #about #about-wrap {
+    gap: .75rem;
+  }
 }
 
 #about #about-wrap h3 {
@@ -162,11 +168,12 @@ body, html {
   width: 100%;
   background-color: var(--blue);
   position: fixed;
-    bottom: 0px;
+  bottom: 0px;
 }
 
 #footer #footer-container {
-  display: table;
+  display: block;
+  padding: 0 1.25rem;
   margin: auto;
   max-width: 1200px;
 }
