@@ -127,13 +127,13 @@ html {
   display: none;
   margin: 1.25rem auto;
   max-width: 600px;
+  padding:0 1.25rem;
 }
 
 #about #about-wrap {
   display: flex;
   align-items: center;
   column-gap: 30px;
-  padding: 1.5rem;
   transition: 200ms ease all;
 }
 
