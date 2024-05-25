@@ -1,0 +1,16 @@
+:root {
+  --black: #262626;
+  --light: #e6fbff;
+  --red: #b3001b;
+  --blue: #255c99;
+  --magenta: #c46bae;
+  --default-radius: 3px
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--light);
+  font-family: "Roboto", sans-serif;
+}

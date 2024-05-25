@@ -17,7 +17,6 @@ Projeto criado com tecnologias simples de trabalhar para que qualquer pessoa com
 ### A fazer (oportunidades de contribuição)
 
 - Responsividade e funcionamento em smartphones
-  - Tornar tela responsiva.
   - Ajustar tamanho dos elementos para visualizar em celular  
     (talvez usar 'em' ao em vez de 'px')
 - Identidade visual
@@ -27,9 +26,6 @@ Projeto criado com tecnologias simples de trabalhar para que qualquer pessoa com
   - Criar imagem de compartilhamento para o Facebook com dimensões corretas (metatag).
   - Criar imagem de compartilhamento para o Linkedin com dimensões corretas (metatag).
   - Adicionar uma metatag de descrição para o projeto.
-- Organização
-  - Separar página de criação de pergunta da página de resposta.  
-    Hoje em dia está tudo junto.
 
 ---
 

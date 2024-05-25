@@ -1,50 +1,14 @@
+let question = null;
+
 window.onload = function () {
   const searchParams = new URLSearchParams(window.location.search);
-  const question = searchParams.get("question");
-
+  document.getElementById("link-home").href = window.location.origin;
+  question = searchParams.get("question");
   if (question) {
     showAnswer(question);
     return;
   }
-  showInitialForm();
 };
-
-let question = null;
-let newUrl = null;
-
-document
-  .getElementById("btn-generate-question")
-  .addEventListener("click", (ev) => {
-    question = document.getElementById("input-question").value;
-    if (!question || question.trim() == "") {
-      alert("Por favor, informe a pergunta desejada");
-      return;
-    }
-    newUrl = `${window.location.href}?question=${encodeURIComponent(question)}`;
-    showLink();
-  });
-
-document.getElementById("btn-copy-link").addEventListener("click", (ev) => {
-  navigator.clipboard.writeText(newUrl);
-  alert(`Link copiado: ${newUrl}`);
-});
-
-function showLink() {
-  document.getElementById("container-link").style.display = "block";
-  document.getElementById("link").href = newUrl;
-  document.getElementById("link").textContent = newUrl;
-}
-
-function showInitialForm() {
-  document.getElementById("make-a-question").style.display = "flex";
-  document.getElementById("about").style.display = "block";
-}
-
-function showAnswer(question) {
-  document.getElementById("the-question").textContent = `${question}?`;
-  document.getElementById("answer-a-question").style.display = "block";
-  document.getElementById("link-home").href = window.location.origin;
-}
 
 document.getElementById("btn-no").addEventListener("mouseover", (ev) => {
   randomizeButtonPosition();
@@ -64,6 +28,11 @@ function randomizeButtonPosition() {
   btnRandom.style.position = "absolute";
   btnRandom.style.top = top + "px";
   btnRandom.style.left = left + "px";
+}
+
+function showAnswer(question) {
+  document.getElementById("the-question").textContent = `${question}?`;
+  document.getElementById("answer-a-question").style.display = "block";
 }
 
 document.getElementById("btn-yes").addEventListener("click", (ev) => {

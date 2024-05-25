@@ -1,0 +1,32 @@
+@import "./normalize.css";
+
+
+#footer {
+  width: 100%;
+  background-color: var(--blue);
+  position: fixed;
+  bottom: 0px;
+}
+
+#footer #footer-container {
+  display: block;
+  padding: 0 1.25rem;
+  margin: auto;
+  max-width: 1200px;
+  
+}
+
+#footer #footer-container p {
+  color: var(--light);
+  text-align: center;
+}
+
+#footer #footer-container p a {
+  color: var(--light);
+}
+
+#footer #footer-container p a .fa-github {
+  font-size: 22px;
+  vertical-align: bottom;
+  margin-left: 8px;
+}
