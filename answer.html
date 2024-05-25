@@ -13,53 +13,29 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./src/css/make-a-question.css" />
-    <link rel="stylesheet" href="./src/css/about.css" />
+    <link rel="stylesheet" href="./src/css/answer.css" />
     <link rel="stylesheet" href="./src/css/footer.css" />
-    <title>Do you want?</title>
+    <title>Do you want? - Resposta</title>
   </head>
   <body>
-    <main id="make-a-question">
+    <main id="answer-a-question">
       <div id="container">
-        <input
-          type="text"
-          id="input-question"
-          placeholder="Escreva a pergunta que deseja fazer"
-        />
-        <button id="btn-generate-question">Gerar página com pergunta</button>
-
-        <div id="container-link">
-          Acesse a página de resposta aqui:
-          <br />
-          <a href="#" id="link" target="_blank"></a>
-          <br />
-          <button id="btn-copy-link">
-            <i class="fa-regular fa-copy"></i> Copiar Link
-          </button>
+        <h3 id="the-question"></h3>
+        <div id="btn-wrap">
+          <button class="btn-answer" id="btn-no">Não</button>
+          <button class="btn-answer" id="btn-yes">Sim</button>
         </div>
+      </div>
+      <div>
+        <p id="create-a-question">
+          Crie sua própria pergunta:
+          <a href="#" target="_blank" id="link-home">Clique aqui</a>
+        </p>
       </div>
     </main>
 
-    <div id="about">
-      <div id="about-wrap">
-        <i class="fa-regular fa-circle-question"></i>
-        <div>
-          <h3>Como funciona?</h3>
-          <h4>
-            Escreva uma pergunta no campo acima e depois clique em "Gerar página
-            com pergunta".
-            <br /><br />
-            Um link será gerado. Envie esse link para a pessoa que você deseja
-            que responda a sua pergunta.
-            <br /><br />
-            A resposta desejada da pergunta precisa ser "Sim".
-          </h4>
-          <h6>
-            Segredinho sujo: A pessoa não vai conseguir clicar no "Não"
-            <i class="fa-regular fa-face-laugh-wink"></i>
-          </h6>
-        </div>
-      </div>
+    <div id="container-btn-no-random">
+      <button class="btn-answer" id="btn-no-random">Não</button>
     </div>
 
     <div id="footer">
@@ -76,7 +52,7 @@
       </div>
     </div>
 
-    <script src="./src/js/make-a-question.js"></script>
+    <script src="./src/js/answer.js"></script>
     <!-- Google tag (gtag.js) -->
     <script
       async

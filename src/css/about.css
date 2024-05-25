@@ -1,0 +1,42 @@
+@import "./normalize.css";
+@import "./footer.css";
+
+#about {
+  display: block;
+  margin: 1.25rem auto;
+  max-width: 600px;
+  padding: 0 1.25rem;
+}
+
+#about #about-wrap {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+#about #about-wrap .fa-circle-question {
+  color: var(--blue);
+  font-size: 22px;
+}
+
+@media (max-width: 450px) {
+  #about #about-wrap {
+    gap: .75rem;
+  }
+}
+
+#about #about-wrap h3 {
+  color: var(--black);
+}
+
+#about #about-wrap h4 {
+  color: var(--black);
+  font-weight: 500;
+  text-align: justify;
+}
+
+#about #about-wrap h6 {
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: line-through;
+}
